@@ -22,21 +22,22 @@
   background: rgba(0, 0, 0, 0.65);
   border-radius: 5px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.toast_icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
 }
 
 .toast_text {
   width: 100px;
-  padding: 10px 20px;
   text-align: center;
-}
-
-.toast_icon {
-  position: relative;
-  left: 50%;
-  top: 15%;
-  margin: -.4rem;
-  width: .8rem;
-  height: .8rem;
 }
 
 .toast_loading {

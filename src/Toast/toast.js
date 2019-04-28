@@ -43,21 +43,20 @@ export default class Toast extends Component {
 
   render() {
     const { notices } = this.state
-    /* const icons = {
+    const icons = {
       info: 'toast_info',
       success: 'toast_success',
       error: 'toast_error',
       loading: 'toast_loading'
-    } */
+    } 
     return (
       <div className="toast">
         {
           notices.map(notice => {
-            console.log(notice)
             return (
               <div className="toast_bg" key={notice.key}>
                 <div className='toast_box'>
-                  {/* <div className={`toast_icon ${icons[notice.type]}`}></div> */}
+                  <div className={`toast_icon ${icons[notice.type]}`}></div>
                   <div className='toast_text'>{notice.content}</div>
                 </div>
               </div>

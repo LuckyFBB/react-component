@@ -22,7 +22,7 @@ export default class CheckBox extends Component {
     } else if (values.length < maxLength) {   //在没有选择这个值并且数量小于最大的选择值
       newValues.push(clickValue)
     } else {       //数量大于最大值
-      Toast.error(`最多可选${maxLength}项`, 1500)
+      Toast.loading(`最多可选${maxLength}项`, 1500)
     }
 
     this.setState({
