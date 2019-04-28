@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.item{
+  padding: 10px 5px;
+}
+
+.item:first-child{
+  padding-top: 0px; 
+}
+
+.item:last-child{
+  padding-bottom: 0px; 
+}
+.item .label{
+  padding-bottom: 10px; 
+  color: #333;
+}
