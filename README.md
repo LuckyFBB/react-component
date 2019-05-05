@@ -16,3 +16,7 @@
 ### Toast
 基于react的弹出框实现。
 在屏幕中间弹出一层提示框。一共有四种形式: info(普通信息提示)、error(错误信息提示)、success(成功操作提示)、loading(正在加载提示)。直接使用Toast.xxx即可调用弹出框。
+
+### MarqueeLine
+基于react的横向文字滚动实现。
+父组件传展示内容给子组件。采用的是text-indent实现，所以根据不同的文本长度text-indent值不一样。需要手动修改index.中的text-indent值。
