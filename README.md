@@ -20,3 +20,6 @@
 ### MarqueeLine
 基于react的横向文字滚动实现。
 父组件传展示内容给子组件。采用的是text-indent实现，所以根据不同的文本长度text-indent值不一样。需要手动修改index.中的text-indent值。
+
+### Mask
+基于react的遮罩实现。

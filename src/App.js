@@ -5,6 +5,7 @@ import Marquee from './Marquee';
 import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
 import MarqueeLine from './MarqueeLine';
+import Mask from './Mask';
 
 function App() {
   return (
