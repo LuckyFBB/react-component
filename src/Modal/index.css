@@ -1,0 +1,63 @@
+.modal--container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 40vh;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+.modal--header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20%;
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+}
+.modal--header span{
+  flex: 1;
+  color: #666;
+  font-size: 18px;
+}
+.modal--header img {
+  height: 15px;
+  width: 15px;
+}
+
+.modal--body {
+  padding: 15px;
+  height: 60%;
+  color: #666;
+  font-size: 16px;
+}
+
+.modal--footer {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  border-top: 1px solid #ddd;
+}
+
+.modal--button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.modal--button__cancel {
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.modal--button__comfirm {
+  color: #ffffff;
+  border-bottom-right-radius: 7px;
+  background-color: #2593fc;
+}
