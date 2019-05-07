@@ -70,7 +70,7 @@ class App extends Component {
         </div>
         <div className='item'>
           <div className='label'>进度条：</div>
-          <Process process='80' showInfo='true' action='true'/>
+          <Process process='50' showInfo='true' action='true' />
         </div>
       </div>
     );
