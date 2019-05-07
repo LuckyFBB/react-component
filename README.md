@@ -30,3 +30,5 @@
 使用true/false控制隐藏现实内容，当显示的时候出现遮罩层。
 
 ### Process
+基于react的进度条实现。
+通过父级组件传值，type--进度条类型，showInfo--是否展示信息，action--能否改变当前数值。
