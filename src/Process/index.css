@@ -33,11 +33,6 @@
   stroke: #666;
 }
 
-.circle--image {
-  height: 30px;
-  width: 30px;
-}
-
 .process--line {
   display: flex;
   flex-direction: column;

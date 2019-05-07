@@ -53,7 +53,7 @@ export default class Process extends Component {
                 process === 100 ? (
                   <image href={completeCircle} x='60' y='60' className='circle--image' transform='translate(-15, -15)' />
                 ) : (
-                    <text text-anchor="middle" transform="translate(60,65)" className='circle--text'>{process}%</text>
+                    <text textAnchor="middle" transform="translate(60,65)" className='circle--text'>{process}%</text>
                   )
               }
               <circle cx="60" cy="60" r="50" className='circle--bottom' />
@@ -74,7 +74,7 @@ export default class Process extends Component {
                 </div>
                 <div className='process--info'>
                   {showInfo && process !== 100 && <span className='process--text'>{`${process}%`}</span>}
-                  {showInfo && process === 100 && <img src={complete} className='process--text__complete' />}
+                  {showInfo && process === 100 && <img src={complete} className='process--text__complete' alt=''/>}
                 </div>
               </div>
               {

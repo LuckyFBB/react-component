@@ -6,6 +6,7 @@ import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
 import MarqueeLine from './MarqueeLine';
 import Modal from './Modal';
+import DropSelect from './DropSelect'
 import Process from './Process';
 
 class App extends Component {
@@ -71,6 +72,10 @@ class App extends Component {
         <div className='item'>
           <div className='label'>进度条：</div>
           <Process type='circle' process='50' showInfo='true' action='true' />
+        </div>
+        <div className='item'>
+          <div className='label'>下拉框：</div>
+          <DropSelect label='城市' options={[{value:'HANGZHOU',label:'杭州'},{value:'SHANGHAI',label:'上海'},{value:'CHONGQING',label:'重庆'}]}/>
         </div>
       </div>
     );
