@@ -6,6 +6,7 @@ import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
 import MarqueeLine from './MarqueeLine';
 import Modal from './Modal';
+import Process from './Process';
 
 class App extends Component {
   constructor(props) {
@@ -66,6 +67,10 @@ class App extends Component {
             onCancel={this.handleCancel}
             onComfirm={this.handleComfirm}
           />
+        </div>
+        <div className='item'>
+          <div className='label'>进度条：</div>
+          <Process process='80' showInfo='true' action='true'/>
         </div>
       </div>
     );
