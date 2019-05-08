@@ -10,12 +10,12 @@
 .marquee-line .text {
   position: absolute;
   white-space: nowrap;
-  animation: marqueeline 10s linear infinite;
+  animation: marqueeline 15s linear infinite;
 }
 
 @keyframes marqueeline {
   0% {
-    text-indent: 50%
+    text-indent: 100vw
   }
   100% {
     text-indent: -100%
