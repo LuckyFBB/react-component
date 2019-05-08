@@ -20,11 +20,13 @@ export default class Process extends Component {
 
   handleChangeProcess = (pramas) => {
     let { process } = this.state
-    if (pramas === 'reduce' && process !== 0) {
+    if (pramas === 'reduce' && process > 0) {
       process -= 10
+      if (process < 0) process = 0
     }
-    if (pramas === 'add' && process !== 100) {
+    if (pramas === 'add' && process < 100) {
       process += 10
+      if (process > 100) process = 100
     }
     this.setState({
       process
@@ -51,7 +53,7 @@ export default class Process extends Component {
             <svg width="120" height="120">
               {
                 process === 100 ? (
-                  <image href={completeCircle} x='60' y='60' className='circle--image' transform='translate(-15, -15)' />
+                  <image href={completeCircle} x='60' y='60' height='30' width='30' transform='translate(-15, -15)' />
                 ) : (
                     <text textAnchor="middle" transform="translate(60,65)" className='circle--text'>{process}%</text>
                   )
@@ -74,7 +76,7 @@ export default class Process extends Component {
                 </div>
                 <div className='process--info'>
                   {showInfo && process !== 100 && <span className='process--text'>{`${process}%`}</span>}
-                  {showInfo && process === 100 && <img src={complete} className='process--text__complete' alt=''/>}
+                  {showInfo && process === 100 && <img src={complete} className='process--text__complete' alt='' />}
                 </div>
               </div>
               {

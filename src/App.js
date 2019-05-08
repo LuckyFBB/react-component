@@ -71,7 +71,7 @@ class App extends Component {
         </div>
         <div className='item'>
           <div className='label'>进度条：</div>
-          <Process type='circle' process='50' showInfo='true' action='true' />
+          <Process type='circle' process='79' showInfo='true' action='true' />
         </div>
         <div className='item'>
           <div className='label'>下拉框：</div>
