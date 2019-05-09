@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames'
-import './index.css';
+import './index.less';
 import Toast from '../Toast';
 
 export default class CheckBox extends Component {

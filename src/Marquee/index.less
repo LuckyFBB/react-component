@@ -1,0 +1,29 @@
+.marquee {
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(96, 51, 162, 0.4);
+
+  .text {
+    position: relative;
+    top: 0;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .before-appear {
+    animation: marquee 1s linear infinite;
+
+    @keyframes marquee {
+      from {
+        top: 0px;
+      }
+
+      to {
+        top: -30px;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames'
 import complete from './complete.png'
 import completeCircle from './complete-circle.png'
-import './index.css'
+import './index.less'
 
 export default class Process extends Component {
   constructor(props) {

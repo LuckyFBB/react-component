@@ -1,0 +1,30 @@
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 13px;
+  line-height: 16px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 10px;
+    margin-right: 5%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+
+    &--checked {
+      border: 1px solid #009a61;
+      background-color: rgba(0, 154, 97, 0.1);
+    }
+  }
+}

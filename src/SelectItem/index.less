@@ -1,0 +1,36 @@
+.fixedUl {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  border-radius: 10px;
+  background: #fff;
+  z-index: 1000;
+
+  .choice {
+    max-height: 200px;
+    overflow-y: scroll;
+
+    &__item {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-bottom: 1px solid #E5E5E5;
+
+      &--cancel {
+        border-bottom: 0;
+        color: red;
+      }
+
+      &--label {
+        color: #000000;
+      }
+    }
+  }
+
+  .rightIcon {
+    padding-right: 15px;
+    height: 50px;
+    width: 30px;
+  }
+}

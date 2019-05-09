@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Mask from '../Mask'
 import rightArrow from './rightArrow.png'
 import SelectItem from '../SelectItem';
-import './index.css'
+import './index.less'
 
 export default class DropSelect extends Component {
   constructor(props) {

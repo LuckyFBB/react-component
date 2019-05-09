@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames'
-import './index.css';
+import './index.less';
 
 export default class MArquee extends Component {
   constructor(props) {

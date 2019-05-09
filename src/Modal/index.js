@@ -1,7 +1,7 @@
 import React from 'react'
 import Mask from '../Mask';
 import close from './close.png'
-import './index.css'
+import './index.less'
 
 export default function Modal(props) {
   const { visible, title, detail, cancelText, comfirmText } = props

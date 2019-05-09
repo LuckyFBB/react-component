@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.less'
 
 export default function SelectItem(props) {
   const { label, options, onCancel, onSelect } = props

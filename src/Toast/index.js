@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Toast from './toast'
-import './index.css'
+import './index.less'
 
 //生成插入节点
 function createNotification() {
