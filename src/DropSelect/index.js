@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Mask from '../Mask'
 import rightArrow from './rightArrow.png'
+import SelectItem from '../SelectItem';
 import './index.css'
 
 export default class DropSelect extends Component {
@@ -38,23 +39,13 @@ export default class DropSelect extends Component {
       <div className='dropselect'>
         <div className='selectclick' onClick={this.handleClick}>
           {value ? (<span>{value} </span>) : <span style={{ color: '#ccc' }}>请选择</span>}
-          <img src={rightArrow} alt=''/>
+          <img src={rightArrow} alt='' />
         </div>
         {
-          show && <div>
+          show && <React.Fragment>
+            <SelectItem options={options} label={label} onCancel={this.handleCancel} onSelect={this.handleSelect} />
             <Mask />
-            <div className='fixedUl'>
-              <div className='choice__item choice__item--label'>{label}</div>
-              <div className='choice'>
-                {
-                  options.map(item => {
-                    return <div className='choice__item' key={item.value} onClick={() => this.handleSelect(item)}>{item.label}</div>
-                  })
-                }
-              </div>
-              <div className='choice__item choice__item--cancel' onClick={this.handleCancel}>取消</div>
-            </div>
-          </div>
+          </React.Fragment>
         }
       </div>
     )
