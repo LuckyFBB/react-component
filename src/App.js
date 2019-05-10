@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import './Toast/index.css'
 import Marquee from './Marquee';
 import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
@@ -8,6 +7,30 @@ import MarqueeLine from './MarqueeLine';
 import Modal from './Modal';
 import DropSelect from './DropSelect'
 import Process from './Process';
+import LinkageSelect from './LinkageSelect';
+
+const PROVINCE = [
+  { label: '浙江省', value: 'ZHENGJIANG' }, 
+  { label: '重庆市', value: 'CHONGQING' }, 
+  { label: '安徽省', value: 'ANHUI' }
+]
+const CITY = {
+  'ZHENGJIANG': [
+    { label: '杭州市', value: 'HANGZHOU' }, 
+    { label: '湖州市', value: 'HUZHOU' }, 
+    { label: '绍兴市', value: 'SHAOXING' }, 
+    { label: '金华市', value: 'JINHUA' }, 
+    { label: '宁波市', value: 'NINGBO' }
+  ],
+  'CHONGQING': [
+    { label: '重庆市辖区', value: 'XIAQU' }, 
+    { label: '重庆市区县', value: 'QUXIAN' }
+  ],
+  'ANHUI': [
+    { label: '合肥市', value: 'HEFEI' }, 
+    { label: '芜湖市', value: 'WUHU' }
+  ]
+}
 
 class App extends Component {
   constructor(props) {
@@ -75,7 +98,11 @@ class App extends Component {
         </div>
         <div className='item'>
           <div className='label'>下拉框：</div>
-          <DropSelect label='城市' options={[{value:'HANGZHOU',label:'杭州'},{value:'SHANGHAI',label:'上海'},{value:'CHONGQING',label:'重庆'}]}/>
+          <DropSelect label='城市' options={[{ value: 'HANGZHOU', label: '杭州' }, { value: 'SHANGHAI', label: '上海' }, { value: 'CHONGQING', label: '重庆' }]} />
+        </div>
+        <div className='item'>
+          <div className='label'>联动框：</div>
+          <LinkageSelect parent={PROVINCE} child={CITY} />
         </div>
       </div>
     );
