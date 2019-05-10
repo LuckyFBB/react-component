@@ -32,3 +32,13 @@
 ### Process
 基于react的进度条实现。
 通过父级组件传值，type--进度条类型(默认为条形进度条)，showInfo--是否展示信息，action--能否改变当前数值。
+
+### DropSelect
+基于react的选择框实现。
+通过父级组件传值，传值的格式(数组对象): [{'label':'',value:''},...,{'label':'',value:''}]
+
+### LinkageSelect
+基于react的联动框实现。
+通过父级组件传值，传值的格式(数组对象): parent表示第一级选项，child表示第二级选项。
+parent的传值格式为: [{'label':'',value:''},...,{'label':'',value:''}]
+child的传值格式为: {'parentVal': [{'label':'',value:''},...,{'label':'',value:''}],...,'parentVal': [{'label':'',value:''},...,{'label':'',value:''}]}
