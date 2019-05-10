@@ -6,6 +6,17 @@
   border-radius: 10px;
   background: #fff;
   z-index: 1000;
+  animation: fideIn 0.5s linear;
+
+  @keyframes fideIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   .choice {
     max-height: 200px;

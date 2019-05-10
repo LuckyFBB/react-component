@@ -5,7 +5,7 @@ export default function SelectItem(props) {
   const { label, options, onCancel, onSelect } = props
   return (
     <div className='fixedUl'>
-      <div className='choice__item choice__item--label'>{label}</div>
+      {label && <div className='choice__item choice__item--label'>{label}</div>}
       <div className='choice'>
         {
           options.map(item => {
