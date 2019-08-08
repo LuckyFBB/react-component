@@ -8,6 +8,7 @@ import Modal from './Modal';
 import DropSelect from './DropSelect'
 import Process from './Process';
 import LinkageSelect from './LinkageSelect';
+import ScrollLine from './ScrollLine';
 
 const PROVINCE = [
   { label: '浙江省', value: 'ZHENGJIANG' }, 
@@ -103,6 +104,10 @@ class App extends Component {
         <div className='item'>
           <div className='label'>联动框：</div>
           <LinkageSelect parent={PROVINCE} child={CITY} />
+        </div>
+        <div className='item'>
+          <div className='label'>滚动条</div>
+          <ScrollLine />
         </div>
       </div>
     );
